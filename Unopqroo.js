@@ -37,8 +37,24 @@ deck.push({color: null, number: "CC", type:"Comodin"});
 deck.push({color: null, number: "CC", type:"Comodin"});
 deck.push({color: null, number: "CC", type:"Comodin"});
 
-console.log(deck);
+//console.log(deck);
 
 const players = rl.question("Cuantos jugadores seran?", {})
+const totalCards = players * 7;
+//Repatir 7 cartas x jugador
+//Recoro el total de tarjetas 
+//(total de tarjetaas = tarjetas/7 x jugador)
+// un arreglo por cada jugador
+var cardsPlayers = {};
 
-console.log(players)
+for(var cTCards = 0; cTCards < 7; cTCards++){
+    for(var cPlayers = 0; cPlayers < players; cPlayers++ ){
+        if (!cardsPlayers["player_"+cPlayers]){
+            cardsPlayers["player_"+cPlayers] = [];
+        }
+        //console.log("player: ", cPlayers);
+        cardsPlayers["player_"+cPlayers].push(deck[cTCards]);
+        //console.log(cardsPlayers);
+    }
+}
+console.log(cardsPlayers);

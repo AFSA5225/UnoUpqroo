@@ -1,0 +1,22 @@
+{
+  "name": "unoupqroo",
+  "version": "1.0.0",
+  "description": "Juego Uno en NodeJS",
+  "main": "Unopqroo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AFSA5225/UnoUpqroo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AFSA5225/UnoUpqroo/issues"
+  },
+  "homepage": "https://github.com/AFSA5225/UnoUpqroo#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
